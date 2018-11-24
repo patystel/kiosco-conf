@@ -1,0 +1,322 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>slide configuracion</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/minified/TweenMax.min.js"></script>
+   
+</head>
+<body>
+
+<div id="container">
+
+
+    <div id="configdiv">
+        <div id="btn-configuracion">
+            <div id="flecha"></div>
+            <div id="ico-conf"></div>
+            <div id="txt-configuracion">CONFIGURACI&Oacute;N</div>
+            <a href="#" id="aconfig"></a>
+        </div>
+        <div id="DatosSaldo">
+
+            <a href="#" id="icoCerrar" style="display:none;"></a>
+
+            <div id="tabs">
+                <a href="#divmiperfil" id="btnmiperfil" class="selected"><span class="bk"></span><span class="tx">Mis datos</span></a>
+                <a href="#divnip" id="btnnip"><span class="bk"></span><span class="tx">Cambiar mi NIP</span></a>
+                <a href="#divterminos" id="btnterminos"><span class="bk"></span><span class="tx">Términos y condiciones</span></a>
+                <a href="#divpreguntas" id="btnpreguntas"><span class="bk"></span><span class="tx">Preguntas frecuentes</span></a>
+            </div>
+
+            <div id="divmiperfil" class="divsec selected">
+                <div class="message">*Los campos que puedes modificar son los activos</div>
+                <div class="divperfsec">
+                    <div class="botonera"><div><button class="btnguardar"></button></div></div>
+                </div>
+            </div>
+
+
+            <div id="divnip" class="divsec">
+                <div class="message">*Selecciona una opción</div>
+                <div class="centered">
+                    
+                    
+                </div>
+            </div>
+            <div id="divterminos" class="divsec">
+                <div class="message">* Confirma que aceptas los Términos y Condiciones.</div>
+                
+                <div class="centered">
+                    <div id="terminslide" class="">
+                        <div id="zoomimage"></div>    
+                        <div class="slides">
+                            <div class="termtx selected">1. Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed, nibh sagittis porta pellentesque torquent imperdiet at felis venenatis lacus. Quam torquent odio est augue ornare tempus class, risus velit non convallis ad quis, pharetra maecenas donec nisi curabitur morbi.
+
+Sapien facilisi lectus sociis eros volutpat cum auctor ligula nascetur vulputate, ultrices proin nulla habitasse diam tellus bibendum est nunc, vivamus pellentesque tempus condimentum taciti posuere magna per curae. Dignissim integer id dictum mus velit magna ligula nisi ad phasellus quam convallis, commodo cubilia sagittis congue torquent erat urna ultrices gravida varius curabitur. Nulla ad euismod scelerisque facilisi at mi porttitor, risus iaculis tincidunt justo mollis vehicula tellus dignissim, felis vulputate inceptos gravida ultrices suscipit.</div>
+                            <div class="termtx">2. </div>
+                            <div class="termtx">3. </div>
+                            <div class="termtx">4. </div>
+                            <div class="termtx">5. </div>
+                            <div class="termtx">6. </div>
+                            <div class="termtx">8. </div>
+                            <div class="termtx">9. </div>
+                            <div class="termtx">10. </div>
+                        </div>
+                        <a href="#" class="btnleft"></a>
+                        <a href="#" class="btnright"></a>
+                        <div class="contador">1 de 10</div>
+                    </div>
+                    <div class="botonera"><div><button class="btnaceptar"></button></div></div>
+                </div>
+            </div>
+            <div id="divpreguntas" class="divsec">
+                <!--<div class="message">* Lorem.</div>-->
+                
+                <div class="centered">
+                    <div id="preguslide" class="">
+                        <div class="slides">
+
+                            <div class="pregtx selected">
+                                <div class="pregdiv">
+                                    <div class="quest"><div>1 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>1 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>1 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>1 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                            </div>
+
+                            <div class="pregtx">
+                                <div class="pregdiv">
+                                    <div class="quest"><div>2 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>2 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>2 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>2 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                            </div>
+
+                            <div class="pregtx">
+                                <div class="pregdiv">
+                                    <div class="quest"><div>3 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>3 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>3 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>3 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                            </div>
+
+                            <div class="pregtx">
+                                <div class="pregdiv">
+                                    <div class="quest"><div>4 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>4 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>4 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                                <div class="pregdiv">
+                                    <div class="quest"><div>4 ¿Lorem ipsum?</div></div>
+                                    <div class="tx">Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar, ac et iaculis dapibus torquent nascetur nibh vehicula, consequat est nunc sociosqu eleifend convallis magna. Convallis ligula elementum eget montes ullamcorper nisl commodo lectus conubia faucibus molestie, mauris orci porttitor pulvinar dictum magnis vel blandit litora nullam sed.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#" class="btnleft"></a>
+                        <a href="#" class="btnright"></a>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    
+    var state = true;
+    var timeAnim = 0.8;//Segundos
+
+    /*function animation(){
+        var textSaldo = '';
+        var rightPos = 0;
+        if(state){
+            state = false;
+            textSaldo = 'Ocultar saldo';
+            rightPos = 0;
+        }else{
+            state = true;
+            textSaldo = 'Ver saldo';
+            rightPos = -860;
+        }
+        jQuery('#vermas').html(textSaldo);
+        TweenMax.to(jQuery('#soporteColor'),timeAnim,{css:{right:rightPos},ease:Linear.easeNone});
+    }
+
+    jQuery('#vermas').bind('click',function(e){
+        e.preventDefault();
+        animation();
+    });
+    jQuery('#icoAction').bind('click',function(e){
+        animation();
+    });*/
+
+
+    jQuery('#tabs a').bind('click',function(e){
+        e.preventDefault();
+        //console.log(e.currentTarget.hash);
+        jQuery('.divsec').removeClass('selected');
+        jQuery(e.currentTarget.hash).addClass('selected');
+
+        jQuery('#tabs a').removeClass('selected');
+        jQuery(e.currentTarget).addClass('selected');
+    });
+
+
+    //Terminos
+    jQuery('#divterminos a.btnleft').bind('click', function(e){
+        e.preventDefault();
+        var elem = jQuery('#divterminos .termtx');
+        var item = 0;
+        for (var i=0;i<elem.length;i++){
+            if(jQuery(elem[i]).hasClass('selected')){
+                jQuery(elem[i]).removeClass('selected');
+                item = i;
+                break;
+            }
+        }
+        item--;
+        if(item<0){
+            item = elem.length-1; 
+        }
+        jQuery(elem[item]).addClass('selected');
+        jQuery('#divterminos .contador').html((item+1)+' de '+elem.length);
+    });
+    jQuery('#divterminos a.btnright').bind('click', function(e){
+        e.preventDefault();
+        var elem = jQuery('#divterminos .termtx');
+        var item = 0;
+        for (var i=0;i<elem.length;i++){
+            if(jQuery(elem[i]).hasClass('selected')){
+                jQuery(elem[i]).removeClass('selected');
+                item = i;
+                break;
+            }
+        }
+        item++;
+        if(item>=elem.length){
+            item = 0; 
+        }
+        jQuery(elem[item]).addClass('selected');
+        jQuery('#divterminos .contador').html((item+1)+' de '+elem.length);
+    });
+
+    //Preguntas
+    jQuery('#preguslide a.btnleft').bind('click', function(e){
+        e.preventDefault();
+        var elem = jQuery('#preguslide .pregtx');
+        var item = 0;
+        for (var i=0;i<elem.length;i++){
+            if(jQuery(elem[i]).hasClass('selected')){
+                jQuery(elem[i]).removeClass('selected');
+                item = i;
+                break;
+            }
+        }
+        item--;
+        if(item<0){
+            item = elem.length-1; 
+        }
+        jQuery(elem[item]).addClass('selected');
+    });
+    jQuery('#preguslide a.btnright').bind('click', function(e){
+        e.preventDefault();
+        var elem = jQuery('#preguslide .pregtx');
+        var item = 0;
+        for (var i=0;i<elem.length;i++){
+            if(jQuery(elem[i]).hasClass('selected')){
+                jQuery(elem[i]).removeClass('selected');
+                item = i;
+                break;
+            }
+        }
+        item++;
+        if(item>=elem.length){
+            item = 0; 
+        }
+        jQuery(elem[item]).addClass('selected');
+    });
+
+    function animConfig(){
+        var pos=jQuery('#configdiv').css('bottom');
+        if(pos=='0px'){
+            pos='-880px';
+            jQuery('#icoCerrar').css('display','none');
+        }else{
+            pos='0px';
+            jQuery('#icoCerrar').css('display','inline-block');
+        }
+        console.log(pos);
+        
+        jQuery('#configdiv').animate({
+            bottom:pos
+        },500,function(){
+            // Animation complete.
+        });
+    }
+
+    jQuery('#icoCerrar').bind('click',function(e){
+        e.preventDefault();
+        animConfig();
+    });
+    jQuery('#aconfig').bind('click',function(e){
+        e.preventDefault();
+        animConfig();
+    });
+
+});
+</script>
+    
+</body>
+</html>
