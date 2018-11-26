@@ -40,7 +40,7 @@ a:-webkit-any-link {
     background-position:top center;
 }
 
-
+/*
 #flecha{
     position:absolute;
     width:630px;
@@ -54,6 +54,8 @@ a:-webkit-any-link {
     background-position:top center; 
     
 }
+*/
+/*
 #btn-configuracion{
     position:absolute;
     width:630px;
@@ -74,6 +76,7 @@ a:-webkit-any-link {
     bottom:0px;
     display:inline-block;
 }
+
 #ico-conf{
     position:absolute;
     z-index:0;
@@ -82,29 +85,22 @@ a:-webkit-any-link {
     background-position:top center;
     width:80px;
     height:80px;
-    left: 370px;
-    top: 14px;
+    left:370px;
+    top:14px;
 }
+
 #txt-configuracion{
     position:absolute;
     color:#3e1579;
     font-size:37px;
     height:40px;
     font-size:22px;
-    top: 31px;
-    left: 191px;
+    top:31px;
+    left:191px;
 }
+*/
 
-#configdiv{
-    position:absolute;
-    /*bottom:0px;*/
-    left:0px;
-    right:0px;
-    background:#37197d;
-    width:1920px;
-    height:880px;
-    bottom:-880px;
-}
+
 
 #icoCerrar{
     display:inline-block;
@@ -116,13 +112,14 @@ a:-webkit-any-link {
     position:absolute;
     right:120px;
     top:-50px;
+    outline:none;
+    z-index:1;
 }
-
+/*
 #tabs{
     text-align:center;
-    /*background-color:yellowgreen;*/
     width:1420px;
-    margin: 61px auto 0px auto;
+    margin:61px auto 0px auto;
 }
 
 #tabs a{
@@ -141,15 +138,15 @@ a:-webkit-any-link {
     opacity:1;
     background:url('../img/sombra-botones.png');
     background-repeat:no-repeat;
-    background-position-y: 86px;
+    background-position-y:86px;
     background-position-x:center;
 }
 
 #tabs a span.bk{
     display:inline-block;
     background:#FFFFFF;
-    width: 326px;
-    height: 85px;
+    width:326px;
+    height:85px;
     border-radius:40px 40px 40px 40px;
     -moz-border-radius:40px 40px 40px 40px;
     -webkit-border-radius:40px 40px 40px 40px;
@@ -160,16 +157,17 @@ a:-webkit-any-link {
 #tabs a span.tx{
 
 }
+*/
 #btnmiperfil span.tx{
     background:url('../img/ico-persona.png');
     background-repeat:no-repeat;
     background-position:left;
     padding:24px;
-    padding-left: 79px;
+    padding-left:79px;
     text-align:left;
     display:inline-block;
     position:relative;
-    top: 4px;
+    top:4px;
 }
 
 #btnnip span.tx{
@@ -177,11 +175,11 @@ a:-webkit-any-link {
     background-repeat:no-repeat;
     background-position:left;
     padding:24px;
-    padding-left: 86px;
+    padding-left:86px;
     text-align:left;
     display:inline-block;
     position:relative;
-    top: 7px;
+    top:7px;
     
 }
 
@@ -191,47 +189,47 @@ a:-webkit-any-link {
     background-position:left;
     background-size:47px;
     width:148px;
-    padding-left: 68px;
+    padding-left:68px;
     padding-top:10px;
     display:inline-block;
     text-align:left;
     position:relative;
-    top: 7px;
+    top:7px;
 }
 #btnpreguntas span.tx{
     background:url('../img/ico-preguntas.png');
     background-repeat:no-repeat;
     background-position:left;
     width:142px;
-    padding-left: 75px;
+    padding-left:75px;
     padding-top:10px;
     display:inline-block;
     text-align:left;
     position:relative;
-    top: 7px;
+    top:7px;
 }
 
 
 #zoomimage{
-    background: url(../img/ico-zoom.png);
-    background-repeat: no-repeat;
-    width: 90px;
-    height: 89px;
-    display: inline-block;
-    text-align: left;
-    position: relative;
-    margin-top: 421px;
-    margin-right: 28px;
-    float: right;
-    z-index: 2;
+    background:url(../img/ico-zoom.png);
+    background-repeat:no-repeat;
+    width:90px;
+    height:89px;
+    display:inline-block;
+    text-align:left;
+    position:relative;
+    margin-top:421px;
+    margin-right:28px;
+    float:right;
+    z-index:2;
 }
-
+/*
 .divsec{
-    /*background-color:cadetblue;*/
     width:1420px;
     margin:0 auto;
     display:none;
 }
+*/
 .divsec .message{
     background-color:#65a233;
     color:#FFFFFF;
@@ -316,18 +314,18 @@ a:-webkit-any-link {
     display:inline-block;
     background:url('../img/btn-guardar.png');
     background-repeat:no-repeat;
-    width: 254px;
-    height: 82px;
+    width:254px;
+    height:82px;
     border:0px;
     outline:none;
 }
 
 .botonera .btnguardar {
-    top: 108px;
-    display: inline-block;
-    margin-top: 216px;
-    align-items: 50% 0;
-    transform: translate(-135%, 317%);
+    top:108px;
+    display:inline-block;
+    margin-top:216px;
+    align-items:50% 0;
+    transform:translate(-135%, 317%);
 }
 
 .btnaceptar{
@@ -338,9 +336,9 @@ a:-webkit-any-link {
     height:84px;
     border:0px;
     outline:none;
-    margin-top: 36px;
-    float: right;
-    margin-right: 203px;
+    margin-top:36px;
+    float:right;
+    margin-right:203px;
 }
 
 .divperfsec>div.botonera{
@@ -357,7 +355,7 @@ a:-webkit-any-link {
     width:565px;
     height:490px;
     position:relative;
-    margin: 0 4% 20px auto;
+    margin:0 4% 20px auto;
 }
 #terminslide .slides{
     position:relative;
@@ -385,8 +383,8 @@ a:-webkit-any-link {
     background-repeat:no-repeat;
     background-size:contain;
     text-decoration:none;
-    width: 40px;
-    height: 85px;
+    width:40px;
+    height:85px;
     position:absolute;
     left:0px;
     top:50%;
@@ -398,8 +396,8 @@ a:-webkit-any-link {
     background-repeat:no-repeat;
     background-size:contain;
     text-decoration:none;
-    width: 40px;
-    height: 85px;
+    width:40px;
+    height:85px;
     position:absolute;
     right:0px;
     top:50%;
@@ -409,7 +407,7 @@ a:-webkit-any-link {
     font-size:18px;
     color:#FFFFFF;
     text-align:center;
-    margin: 23px 0px;
+    margin:23px 0px;
     clear:both;
 }
 
@@ -420,15 +418,15 @@ a:-webkit-any-link {
     background-size:contain;
     background-repeat:no-repeat;
     background-position:left;
-    height: 57px;
+    height:57px;
     padding-left:71px;
 }
 .quest>div{
     background:url('../img/nube-pregunta.png');
     background-size:contain;
     background-repeat:no-repeat;
-    width: 527px;
-    height: 77px;
+    width:527px;
+    height:77px;
     color:#FFFFFF;
     padding-top:19px;
     font-size:20px;
@@ -438,12 +436,12 @@ a:-webkit-any-link {
 .pregdiv .tx{
     color:#FFFFFF;
     font-size:17px;
-    margin-top: 46px;
+    margin-top:46px;
 }
 .pregdiv{
     display:inline-block;
     width:40%;
-    margin: 19px 3%;
+    margin:19px 3%;
 }
 
 
@@ -464,22 +462,205 @@ a:-webkit-any-link {
     padding-left:0px;
     padding-right:50px;
     position:relative;
-    top: 93px;
+    top:93px;
 }
 
 
 #preguslide .btnleft{
     position:absolute;
     left:0px;
-    top: 65%;
+    top:65%;
     transform:translate(0px, -50%);
 }
 #preguslide .btnright{
     position:absolute;
     right:0px;
-    top: 65%;
+    top:65%;
     transform:translate(0px, -50%);
 }
+
+
+
+
+
+
+
+
+
+/**********************************/
+#configdiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    /*background:#37197d;*/
+    width:1920px;
+    height:572px;
+    /*bottom:0px;*/
+    bottom:-571px;
+}
+
+#tabs{
+    width:375px;
+    background:#37197d;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+}
+
+.menulist{}
+.menulist a{}
+.menulist a.btn-ico{
+    display:block;
+    background-color:#FFFFFF;
+    margin:20px 40px 20px 40px;
+    padding:10px 76px 10px 25px;
+    height:60px;
+    font-size:28px;
+    text-decoration:none;
+    vertical-align:middle;
+    line-height:66px;
+    opacity:0.6;
+}
+.menulist a.btn-ico:hover,
+.menulist a.btn-ico:visited{
+    text-decoration:none;
+    color:#3C1280;
+}
+.menulist a.btn-ico:first-child{
+    margin:50px 40px 20px 40px;
+}
+.menulist a.btn-ico:last-child{
+    margin:20px 40px 50px 40px;
+}
+.menulist a.btn-ico.selected{
+    opacity:1;
+}
+.menulist a.btn-ico.btn-ico-datos{
+    background-image:url('../img/ico-mis-datos.png');
+    background-position:228px 10px;
+    background-size:58px 58px;
+    background-repeat:no-repeat;
+}
+.menulist a.btn-ico.btn-ico-nip{
+    background-image:url('../img/ico-cambio-nip.png');
+    background-position:228px 10px;
+    background-size:58px 58px;
+    background-repeat:no-repeat;
+}
+.menulist a.btn-ico.btn-ico-onip{
+    background-image:url('../img/ico-olvide-nip.png');
+    background-position:228px 10px;
+    background-size:58px 58px;
+    background-repeat:no-repeat;
+}
+.menulist a.btn-ico.btn-ico-term{
+    background-image:url('../img/ico-terminos-condiciones.png');
+    background-position:228px 10px;
+    background-size:58px 58px;
+    background-repeat:no-repeat;
+}
+.menulist a.btn-ico.btn-ico-preg{
+    background-image:url('../img/ico-preguntas-frecuentes.png');
+    background-position:228px 10px;
+    background-size:58px 58px;
+    background-repeat:no-repeat;
+}
+.menulist a.btn-ico.btn-ico-doble{
+    line-height:34px;
+}
+
+
+#btn-configuracion{
+    position:absolute;
+    /*width:630px;*/
+    width:375px;
+    /*height:124px;*/
+    height:68px;
+    /*left:50%;*/
+    left:0px;
+    top:-68px;
+    /*transform:translate(-50%,0);*/
+    z-index:0;
+    background-image:url("../img/btn-conf.png");
+    background-repeat:no-repeat;
+    background-position:top center; 
+}
+#btn-configuracion a#aconfig{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    display:inline-block;
+    outline:none;
+}
+
+#flecha{
+    position:absolute;
+    /*width:630px;*/
+    width:375px;
+    /*height:124px;*/
+    height:57px;
+    left:50%;
+    top:11px;
+    transform:translate(-50%,0);
+    z-index:0;
+    background-image:url("../img/ico-flecha.png");
+    background-repeat:no-repeat;
+    background-position:top center; 
+    
+}
+#DatosSaldo{
+    height:570px;
+}
+
+#txt-configuracion{
+    position:absolute;
+    color:#3e1579;
+    font-size:37px;
+    height:40px;
+    font-size:22px;
+    top:31px;
+    /*left:191px;*/
+    left:68px;
+}
+#ico-conf{
+    position:absolute;
+    z-index:0;
+    background-image:url(../img/ico-configuracion.png);
+    background-repeat:no-repeat;
+    background-position:top center;
+    width:80px;
+    /*height:80px;*/
+    height:49px;
+    /*left:370px;*/
+    left:254px;
+    top:14px;
+}
+
+
+.divsec{
+    position:absolute;
+    /*left:376px;*/
+    bottom:0px;
+    width:1543px;
+    height:572px;
+    z-index:0;
+    left:-1543px;
+    /*
+    -webkit-transition:left 1s;
+    transition:left 1s;*/
+    margin:0 auto;
+    display:block;
+}
+
+
+.divsec.selected{
+    left:376px;
+}
+
+
+
 
 
 

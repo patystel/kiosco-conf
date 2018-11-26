@@ -12,7 +12,60 @@
 
 <div id="container">
 
+    <div id="configdiv">
+        <div id="btn-configuracion">
+            <div id="flecha"></div>
+            <div id="ico-conf"></div>
+            <div id="txt-configuracion">CONFIGURACI&Oacute;N</div>
+            <a href="#" id="aconfig"></a>
+        </div>
+        <div id="DatosSaldo">
 
+            <a href="#" id="icoCerrar" style="display:none;"></a>
+
+            <div id="divmiperfil" class="divsec"><!-- selected -->
+                <!--
+                <div class="message">*Los campos que puedes modificar son los activos</div>
+                <div class="divperfsec">
+                    <div class="botonera"><div><button class="btnguardar"></button></div></div>
+                </div>
+                -->
+                <p>¿Deseas modificar tu e-mail o tel{efono celular?</p>
+                <div>Nombre *<input type="text" name="nombre"></div>
+                <div>1 Apellido *<input type="text" name="apellido1"></div>
+                <div>2 Apellido *<input type="text" name="apellido2"></div>
+                <div>E-mail *<input type="text" name="email"></div>
+            </div>
+
+            <div id="divnip" class="divsec">
+                <div class="message">* Nip Selecciona una opción</div>
+            </div>
+
+            <div id="divonip" class="divsec">
+                <div class="message">* Olvida Nip Selecciona una opción</div>
+            </div>
+
+            <div id="divterminos" class="divsec">
+                <div class="message">* Termino Confirma que aceptas los Términos y Condiciones.</div>
+            </div>
+
+            <div id="divpreguntas" class="divsec">
+                <div class="message">* Preguntas Selecciona una opción</div>
+            </div>
+
+            <div id="tabs" class="menulist">
+                <a href="#divmiperfil" id="btnmiperfil" class="btn-ico btn-ico-datos">Mis Datos</a>
+                <a href="#divnip" id="btnnip" class="btn-ico btn-ico-nip">Cambiar NIP</a>
+                <a href="#divonip" id="btnonip" class="btn-ico btn-ico-onip">Olvide NIP</a>
+                <a href="#divterminos" id="btnterminos" class="btn-ico btn-ico-term btn-ico-doble">Términos y Condiciones</a>
+                <a href="#divpreguntas" id="btnpreguntas" class="btn-ico btn-ico-preg btn-ico-doble">Preguntas Frecuentes</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--
     <div id="configdiv">
         <div id="btn-configuracion">
             <div id="flecha"></div>
@@ -73,7 +126,6 @@ Sapien facilisi lectus sociis eros volutpat cum auctor ligula nascetur vulputate
                 </div>
             </div>
             <div id="divpreguntas" class="divsec">
-                <!--<div class="message">* Lorem.</div>-->
                 
                 <div class="centered">
                     <div id="preguslide" class="">
@@ -169,51 +221,94 @@ Sapien facilisi lectus sociis eros volutpat cum auctor ligula nascetur vulputate
 
 
     </div>
+    -->
 </div>
 
 
 <script type="text/javascript">
+
+function animate(elem1,elem2){
+    if(elem1==null){
+        jQuery(elem2).animate({
+            opacity:1,
+            left:'376px'//(state?1543:376)+'px'
+        },500,function(){
+            jQuery(elem2).addClass('selected');
+        });
+    }else{
+        jQuery(elem1).animate({
+            opacity:0,
+            left:'-1543px'
+        },500,function(){
+            jQuery(elem1).removeClass('selected');
+            jQuery(elem2).animate({
+                opacity:1,
+                left:'376px'
+            },500,function(){
+                jQuery(elem2).addClass('selected');
+            });
+        });
+    }
+}
+
 jQuery(document).ready(function(){
-    
     var state = true;
     var timeAnim = 0.8;//Segundos
-
-    /*function animation(){
-        var textSaldo = '';
-        var rightPos = 0;
-        if(state){
-            state = false;
-            textSaldo = 'Ocultar saldo';
-            rightPos = 0;
-        }else{
-            state = true;
-            textSaldo = 'Ver saldo';
-            rightPos = -860;
-        }
-        jQuery('#vermas').html(textSaldo);
-        TweenMax.to(jQuery('#soporteColor'),timeAnim,{css:{right:rightPos},ease:Linear.easeNone});
-    }
-
-    jQuery('#vermas').bind('click',function(e){
-        e.preventDefault();
-        animation();
-    });
-    jQuery('#icoAction').bind('click',function(e){
-        animation();
-    });*/
-
-
     jQuery('#tabs a').bind('click',function(e){
         e.preventDefault();
-        //console.log(e.currentTarget.hash);
-        jQuery('.divsec').removeClass('selected');
-        jQuery(e.currentTarget.hash).addClass('selected');
-
-        jQuery('#tabs a').removeClass('selected');
+        jQuery('.menulist a.btn-ico').removeClass('selected');
         jQuery(e.currentTarget).addClass('selected');
+        var next = jQuery(e.currentTarget.hash)[0];
+        var prev = jQuery('.divsec.selected');
+        var t = true;
+        if(prev.length>0){
+            prev = prev[0];
+            if(prev.id==next.id){
+                t = false;
+            }
+        }else{
+            prev = null;
+        }
+        if(t){
+            animate(prev,next);
+        }
+        //left:-1543px;
+        //left:376px;
     });
 
 
+    function animConfig(){
+        var pos=jQuery('#configdiv').css('bottom');
+        if(pos=='0px'){
+            jQuery('.divsec.selected').animate({
+                opacity:0,
+                left:'-1543px'
+            },500,function(){
+                //jQuery(elem2).addClass('selected');
+            });
+            pos='-571px';
+            jQuery('#icoCerrar').css('display','none');
+        }else{
+            pos='0px';
+            jQuery('#icoCerrar').css('display','inline-block');
+        }
+        jQuery('#configdiv').animate({
+            bottom:pos
+        },500,function(){
+            // Animation complete.
+        });
+    }
+
+    jQuery('#icoCerrar').bind('click',function(e){
+        e.preventDefault();
+        animConfig();
+    });
+    jQuery('#aconfig').bind('click',function(e){
+        e.preventDefault();
+        animConfig();
+    });
+
+    /*
     //Terminos
     jQuery('#divterminos a.btnleft').bind('click', function(e){
         e.preventDefault();
@@ -288,32 +383,7 @@ jQuery(document).ready(function(){
         jQuery(elem[item]).addClass('selected');
     });
 
-    function animConfig(){
-        var pos=jQuery('#configdiv').css('bottom');
-        if(pos=='0px'){
-            pos='-880px';
-            jQuery('#icoCerrar').css('display','none');
-        }else{
-            pos='0px';
-            jQuery('#icoCerrar').css('display','inline-block');
-        }
-        console.log(pos);
-        
-        jQuery('#configdiv').animate({
-            bottom:pos
-        },500,function(){
-            // Animation complete.
-        });
-    }
-
-    jQuery('#icoCerrar').bind('click',function(e){
-        e.preventDefault();
-        animConfig();
-    });
-    jQuery('#aconfig').bind('click',function(e){
-        e.preventDefault();
-        animConfig();
-    });
+    */
 
 });
 </script>
